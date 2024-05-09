@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--medium-gray);
+    background-color: var(--almost-white);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease-in-out;
+}
+
+li{
+    list-style: none;
+}
+
+/*
+****************
+----------------
+CONTAINER CSS
+----------------
+****************
+*/
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    min-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all .3s ease-in-out;
+}
+
+/*
+******************
+------------------
+   HEADER CSS
+------------------
+******************
+*/
+
+.header{
+    width: 100%;
+    padding: 0 2.55rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-nav{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.header-logo{
+    margin-top: 2rem;
+}
+
+.nav-menu{
+    margin-top: 2.15rem;
+    margin-left: 4rem;
+    display: flex;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+}
+
+.mobile-menu{
+    display: none;
+    z-index: 10;
+}
+
+.nav-item{
+    margin-right: 2.45rem;
+    font-size: 0.9rem;
+    letter-spacing: -0.005rem;
+}
+
+.nav-item a:hover{
+    color: var(--almost-black);
+    font-weight: 500;
+}
+
+.arrow-icon{
+    margin-left: 0.45rem;
+    margin-bottom: 0.055rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-features, .nav-company{
+    display: none;
+    position: absolute;
+    padding: 1.5rem 1.6rem 0.5rem 1.6rem;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.13);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-menu{
+    display: block;
+    opacity: 1;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.arrow-rotate{
+    transform: rotate(180deg);
+}
+
+.nav-item:first-child{
+    position: relative;
+}
+
+.nav-item a{
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-features{
+    width: max-content;
+    right: 0;
+}
+
+.features-list, .company-list{
+    margin-bottom: 0.7rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.company-list{
+    height: 20px;
+    margin-top: 0.28rem;
+}
+
+.features-list:hover{
+    color: var(--almost-black);
+}
+
+.features-list:hover .features-list-icon{
+    transform: scale(1.35);
+}
+
+.features-list:nth-child(even) a{
+    position: relative;
+    right: 2px;
+}
+
+.features-list:nth-child(odd) .features-list-icon{
+    position: relative;
+    right: 1px;
+}
+
+.features-list:nth-child(3) .features-list-icon{
+    margin-right: 1.07rem;
+}
+
+.features-list-icon{
+    margin-right: 1rem;
+    position: relative;
+    top: 0.1rem;
+    transition: all 0.20s ease-in-out;
+}
+
+.acct-item-mobile{
+    display: none;
+}
+
+.nav-acct-menu{
+    margin-left: auto;
+    display: flex;
+    font-size: 0.89rem;
+}
+
+.acct-item{
+    margin-top: 2.15rem;
+}
+
+.acct-item:first-of-type{
+    margin-right: 1.285rem;
+}
+
+.acct-item a{
+    padding: 0.695rem 1.33rem;
+    transition: all .2s ease-in-out;
+}
+
+.acct-item a:hover{
+    color: var(--almost-black);
+    font-weight: 500;
+}
+
+.acct-item:last-of-type a{
+    outline: 0.125rem solid var(--medium-gray);
+    border-radius: 13px;
+}
+
+.acct-item:last-of-type a:hover{
+    outline-color: var(--almost-black);
+}
+
+/*
+***********************
+----------------------- 
+--CONTENT  CSS--
+----------------------- 
+***********************
+*/
+
+.content{
+    width: 50%;
+    height: 100%;
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10.34rem;
+    transition: all .4s ease-in-out;
+}
+
+.hero{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image{
+    width: 66.7%;
+    margin-bottom: 3.6rem;
+    margin-right: 1.22rem;
+    transition: all .4s ease-in-out;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.content-title{
+    max-width: 530px;
+    min-width: 520px;
+    margin-bottom: 2.95rem;
+    font-size: 4.9rem;
+    font-weight: 700;
+    letter-spacing: -0.01rem;
+    color: var(--almost-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.content-p{
+    max-width: 480px;
+    margin-bottom: 3.2rem;
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+}
+
+.btn{
+    width: 163px;
+    height: 56px;
+    padding-bottom: 0.1rem;
+    padding-left: 0.2rem;
+    margin-bottom: 6.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.055rem;
+    border: none;
+    border-radius: 0.95rem;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    outline: 2px solid var(--almost-black);
+    outline-offset: -1px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cleint-logo{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img{
+    transition: all 0.35s ease-in-out;
+}
+
+
+.logo-img:hover{
+    transform: scale(1.26);
+}
+
+
+/*
+**********************
+----------------------
+<--(RESPONSIVE CSS)-->
+----------------------
+**********************
+*/
+
+@media screen and (max-width: 1240px){
+    /*
+    **********************
+    ----------------------
+    <--(--CONTENT--)-->
+    ----------------------
+    **********************
+    */
+    .content{
+        margin-top: 2.5rem;
+        padding-left: 5rem;
+    }
+    
+    .content-title{
+        max-width: 400px;
+        min-width: 400px;
+        font-size: 3.8rem;
+    }
+    
+    .hero-image{
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 860px){
+    /*
+    **********************
+    ----------------------
+    <--(--CONTAINER--)-->
+    ----------------------
+    **********************
+    */  
+    .container{
+        height: inherit;
+        padding-bottom: 2rem;
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+    
+    /*
+    **********************
+    ----------------------
+    <--(--HEADER--)-->
+    ----------------------
+    **********************
+    */
+    
+    .header-nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-acct-menu{
+        display: none;
+    }
+    
+    .mobile-menu{
+        height: 30px;
+        width: 30px;
+        display: block;
+        background-image: url(images/icon-menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: 0.64rem;
+        transition: all 0.35s linear;
+    }
+    
+    .close-menu{
+        height: 30px;
+        width: 30px;
+        display: block;
+        background-image: url(images/icon-close-menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: 0.64rem;
+        transform: rotate(-180deg);
+    }
+    
+    .acct-item-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        transition: all .4s ease-in-out;
+    }
+    
+    .acct-item-mobile:nth-child(5){
+        margin-top: 2rem;
+    }
+    
+    .acct-item-mobile:nth-child(6) a{
+        padding: 0.8rem 4.5rem;
+        outline: 0.125rem solid var(--medium-gray);
+        border-radius: 13px;
+    }
+    
+    .acct-item-mobile a:hover{
+        color: var(--almost-black);
+        font-weight: 700;
+    }
+    
+    .acct-item-mobile:nth-child(6) a:hover{
+        outline-color: var(--almost-black);
+    }
+    
+    .nav-menu{
+        width: 280px;
+        height: 100vh;
+        min-height: 900px;
+        margin: 0;
+        padding: 4.65rem 2rem 0 2rem;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        right: -400px;
+        top: 0;
+        background-color: var(--almost-white);
+    }
+    
+    .show-mobile-menu{
+        right: -41px;
+        visibility: visible;
+    }
+    
+    .nav-features, .nav-company{
+        padding: 1.8rem 0 0 1.2rem;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .nav-company{
+        padding: 1.2rem 0 0 1.2rem;
+    }
+    
+    .features-list-icon{
+        transform: scale(1.35);
+    }
+    
+    .features-list:hover .features-list-icon{
+        transform: scale(1.82);
+    }
+    
+    .features-list, .company-list{
+        margin-bottom: 1.6rem;
+    }
+    
+    .nav-item a{
+        font-size: 1.15rem;
+    }
+    
+    .nav-item{
+        margin: 1rem 0;
+        padding: 0;
+    }
+    
+    /*
+    **********************
+    ----------------------
+    <--(--CONTENT--)-->
+    ----------------------
+    **********************
+    */
+    
+    .content{
+        padding-top: 4rem;
+        padding-left: 2.5rem;
+    }
+    
+    .content-title{
+        max-width: 340px;
+        min-width: 340px;
+        font-size: 3.2rem;
+    }
+    
+    .hero{
+        margin: 3rem 0 0 0;
+        align-items: flex-start;
+    }
+    
+    .hero-image {
+        width: 78%;
+    }
+    
+    .overflow{
+        width: 100vw;
+        height: 100vh;
+        min-height: 900px;
+        position: absolute;
+        top: 0;
+        display: none;
+        background-color: black;
+        opacity: 0.7;
+    }
+    
+    .show-overflow{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /*
+    **********************
+    ----------------------
+    <--(--CONTENT--)-->
+    ----------------------
+    **********************
+    */
+    
+    .content-title{
+        max-width: 265px;
+        min-width: 265px;
+        font-size: 2.5rem;
+    }
+    
+    .content-p{
+        max-width: 290px;
+        font-size: 1rem;
+    }
+    
+    .cleint-logo{
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*
+    **********************
+    ----------------------
+    <--(--HEADER--)-->
+    ----------------------
+    **********************
+    */
+    
+    .header{
+        padding: 0 1.1rem;
+    }
+    
+    .show_mobile_menu{
+        right: -20px;
+        visibility: visible;
+    }
+    
+    /*
+    **********************
+    ----------------------
+    <--(--CONTENT--)-->
+    ----------------------
+    **********************
+    */
+    
+    br{
+        display: none;
+    }
+    
+    .content{
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+        align-items: center;
+        order: 2;
+    }
+    
+    .content-title{
+        max-width: none;
+        min-width: none;
+        margin-bottom: 1.3rem;
+        font-size: 2.2rem;
+    }
+    
+    .content-p{
+        max-width: none;
+        margin-bottom: 1.8rem;
+        font-size: 1rem;
+    }
+    
+    .btn{
+        margin-bottom: 3.5rem;
+    }
+
+    .client-logo{
+        width: 100%;
+    }
+    
+    .logo-img {
+        width: 90%;
+    }
+
+    .hero{
+        width: 100%;
+        margin-top: 1.5rem;
+        order: 1;
+    }
+    
+    .hero-image{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /*
+    **********************
+    ----------------------
+    <--(--CONTAINER--)-->
+    ----------------------
+    **********************
+    */
+    
+    .container{
+        min-height: 0;
+    }
+
+    /*
+    **********************
+    ----------------------
+    <--(--CONTENT--)-->
+    ----------------------
+    **********************
+    */
+    
+    br{
+        display: none;
+    }
+}

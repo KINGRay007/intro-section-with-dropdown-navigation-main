@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Intro Section With Dropdown Navigatio</title>
+</head>
+
+<body>
+    <main class="container" id="container">
+        <header class="header">
+            <nav class="header-nav">
+                <figure>
+                    <img src="./images/logo.svg" alt="logo image" class="header-logo">
+                </figure>
+                
+                <!-- ( --NAV MENU-- ) -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="features linkA" id="features">
+                            Features
+                            <img src="./images/icon-arrow-down.svg" alt="sub-arrow" class="arrow-icon" id="features-icon">
+                        </a>
+                        <!-- ( --FEATURES DROP DOWN MENU-- ) -->
+                        <ul class="nav-features" id="features-menu">
+                            <li class="features-list">
+                                <a href="#">
+                                    <img src="./images/icon-todo.svg" alt="Todo list icon" class="features-list-icon">Todo List
+                                </a>
+                            </li>
+                            <li class="features-list">
+                                <a href="#">
+                                    <img src="./images/icon-calendar.svg" alt="calendar icon" class="features-list-icon">Calendar
+                                </a>
+                            </li>
+                            <li class="features-list">
+                                <a href="#">
+                                    <img src="./images/icon-reminders.svg" alt="reminders icon" class="features-list-icon">Reminders
+                                </a>
+                            </li>
+                            <li class="features-list">
+                                <a href="#">
+                                    <img src="./images/icon-planning.svg" alt="planning icon" class="features-list-icon">Planning
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="company linkB" id="company">
+                            Company
+                            <img src="./images/icon-arrow-down.svg" alt="arrow icon" class="arrow-icon" id="company-icon">
+                        </a>
+                        <!-- ( --COMPANY DROP DOWN MENU-- ) -->
+                        <ul class="nav-company" id="company-menu">
+                            <li class="company-list">
+                                <a href="#">
+                                    History
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="#">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="linkC">Careers</a></li>
+                    <li class="nav-item"><a href="#" class="linkD">About</a></li>
+                    <li class="acct-item-mobile"><a href="#">Login</a></li>
+                    <li class="acct-item-mobile"><a href="#">Register</a></li>
+                </ul>
+                
+                <ul class="nav-acct-menu">
+                    <li class="acct-item"><a href="#">Login</a></li>
+                    <li class="acct-item"><a href="#">Register</a></li>
+                </ul>
+                <a href="#" class="mobile-menu" id="mobile-menu"></a>
+            </nav>
+        </header>
+        
+        <!-- ( --CONTENT-- ) -->
+        <section class="content">
+            <h1 class="content-title">Make <br>remote work</h1>
+            <p class="content-p">
+                Get your team in sync, no matter your location. Streamline processes,
+                create team rituals, and watch productivity soar.
+            </p>
+            
+            <button class="btn">Learn more</button>
+            <div class="cleint-logo">
+                <figure>
+                    <img src="images/client-databiz.svg" class="logo-img" alt="databiz logo">
+                </figure>
+                <figure>
+                    <img src="images/client-audiophile.svg" class="logo-img" alt="audiophile logo">
+                </figure>
+                <figure>
+                    <img src="images/client-meet.svg" class="logo-img" alt="meet logo">
+                </figure>
+                <figure>
+                    <img src="images/client-maker.svg" class="logo-img" alt="maker logo">
+                </figure>
+            </div>
+        </section>
+        <div class="hero">
+            <picture class="hero-image">
+                <source media="(min-width: 601px)" srcset="images/image-hero-desktop.png">
+                <img src="./images/image-hero-mobile.png" alt="hero" class="hero-img">
+            </picture>
+        </div>
+    </main>
+    <div class="overflow" id="overflow"></div>
+</body>
+</html>
